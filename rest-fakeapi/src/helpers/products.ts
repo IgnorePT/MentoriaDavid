@@ -1,5 +1,5 @@
-export const mapProductData = (products, type = "default") => {
-    return products.map(product => {
+export const mapProductData = (products: any, type = "default") => {
+    return products.map((product: any) => {
         switch (type) {
             case "new":
                 return {

@@ -37,8 +37,7 @@ const App = () => {
 			})
 	}, []);
 
-
-	const handleCardClick = (product) => {
+	const handleCardClick = (product: any) => {
 		//Passamos o produto para o selecionado
 		setSelectedProduct(product)
 		// Passe abra o modal e passe essa informação para o modal
@@ -62,6 +61,7 @@ const App = () => {
 			{/* Dados de API 2 */}
 			<ProductCardSlider products={products2} onCardClick={handleCardClick} />
 
+			{/* Modal de Produto */}
 			{showCardModal && (
 				<ProductModal closeModal={closeModal} product={selectedProduct} />
 			)}
